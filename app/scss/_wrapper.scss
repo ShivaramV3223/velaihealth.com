@@ -1,0 +1,21 @@
+.wrapper{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.services{
+    flex: 1;
+    background-color: $white_grey;
+
+    &__content{
+        font-weight: 300;
+    }
+
+
+}
+
+body, html{
+    height: 100%;
+}

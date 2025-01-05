@@ -1,0 +1,72 @@
+.services{
+    background-color: $light_gray;
+    text-align: center;
+
+    // @include breakpoint-up(medium){
+    //     text-align: left;
+    // }
+
+    &__grid{
+        @include breakpoint-up(large){
+            display: flex;
+        }
+        a{
+            display: inline-block;
+        }
+    }
+
+    &__item{
+
+        background-color: $dark_green;
+        @include breakpoint-up(large){
+            flex: 1;
+        }
+        padding: 0.9375rem;
+        
+        background-clip: content-box;
+        color: white;
+        border-radius: 3.125rem;
+
+
+        // opacity: 1;
+        transition: all 300ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &__icon{
+        margin-top: 1.875rem;
+        // padding-top: 1.875rem;
+        // margin-bottom: 1.5rem;
+
+        @include breakpoint-up(large){
+            margin-top: 2.185rem;
+            margin-bottom: 0.9375rem;
+        }
+    }
+
+    &__desc{
+        font-size: 0.9375rem;
+        line-height: 1.5;
+
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+        
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+
+    }
+
+    &__intro{
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+    }
+
+
+
+}
