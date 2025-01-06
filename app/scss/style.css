@@ -81,7 +81,7 @@ h1 {
 }
 @media (min-width: 64em) {
   h1 {
-    font-size: 3.25rem;
+    font-size: 3.125rem;
   }
 }
 
@@ -296,11 +296,12 @@ button:hover, .button:hover {
   }
 }
 .hero__text {
-  text-align: left;
-  padding: 2.25rem 0px 2.25rem 3.75rem;
+  text-align: center;
+  padding: 2.25rem;
 }
 @media (min-width: 64em) {
   .hero__text {
+    text-align: left;
     flex: 1;
     order: 1;
   }
